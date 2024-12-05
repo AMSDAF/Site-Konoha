@@ -47,7 +47,7 @@ body::-webkit-scrollbar-track {
     left: 0;
     top: 0;
     height: 75vh;
-    background-image: url(/scr/Imagens/CapaPaginaPricipal.jpg);
+    background-image: url(../Imagens/CapaPaginaPricipal.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
