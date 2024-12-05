@@ -1,20 +1,20 @@
 footer {
-    max-width: 100%;
+    max-width: 100vw;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    padding-block: 10px;
+    padding-block: 20px;
     border-top: 2px solid white;
 }
 
 #name-logo {
     margin-inline: 20px;
-    max-width: 5vw;
+    max-width: 7vw;
 }
 
 .credtis p {
-    margin-inline: 10px;
+    margin-inline: 20px;
     color: #ddd;
 }
 
@@ -37,4 +37,16 @@ footer {
     list-style: none;
     margin-inline: 35px;
     color: #ddd;
+}
+
+@media (max-width: 460px) {
+    #name-logo {
+        max-width: 30vw;
+        margin-inline: 10px;
+    }
+
+    .credtis p {
+        font-size: 12px;
+        margin-inline: 10px;
+    }
 }
