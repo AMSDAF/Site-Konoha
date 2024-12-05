@@ -1,0 +1,40 @@
+footer {
+    max-width: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-block: 10px;
+    border-top: 2px solid white;
+}
+
+#name-logo {
+    margin-inline: 20px;
+    max-width: 5vw;
+}
+
+.credtis p {
+    margin-inline: 10px;
+    color: #ddd;
+}
+
+.credtis p a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.credtis p a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+.credtis-moderador {
+    color: #ddd;
+    margin-inline: 10px;
+}
+
+.moderador {
+    list-style: none;
+    margin-inline: 35px;
+    color: #ddd;
+}

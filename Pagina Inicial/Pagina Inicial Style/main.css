@@ -1,0 +1,138 @@
+main {
+    width: 100vw;
+    min-height: 100vh; 
+    margin-top: 75vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 2;
+}
+
+.quem-somos {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.336);
+}
+
+.quem-somos h1 {
+    font-size: 50px;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    border-bottom: 2px solid white;
+    max-width: fit-content;
+}
+
+.quem-somos p {
+    margin-block: 10px;
+}
+
+.noticias {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.noticias .title {
+    font-size: 40px;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    border-bottom: 2px solid white;
+    max-width: fit-content;
+}
+
+#window-cards {
+    width: 100%;
+    width: 90vw;
+    height: 100vh;
+    margin-block: 20px;
+    padding-block: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.336);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    scrollbar-color: rgba(255, 255, 255, 0.4) rgba(0, 0, 0, 0.2); 
+    scrollbar-width: thin;
+}
+
+#window-cards::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent; 
+}
+
+#window-cards::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.4); 
+    border-radius: 4px;
+}
+
+#window-cards::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.6); 
+}
+
+#window-cards::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+
+#window-cards::-webkit-scrollbar {
+    display: none; 
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+    border-top: 2px solid white;
+}
+
+.card-image {
+    margin-block: 20px;
+}
+
+.card-image img {
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+.card-content {
+    width: 62vw;
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    text-align:justify;
+}
+
+.card-title {
+    color: #ddd;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.card-paragraph {
+    color: #ddd;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.card-button {
+    color: white;
+    width: 100vw;
+    max-width: 850px;
+    padding-block: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card-button:hover {
+    background-color: rgba(255, 255, 255, 0.26);
+}
