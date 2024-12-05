@@ -54,6 +54,20 @@ body::-webkit-scrollbar-track {
     z-index: 1;
 }
 
+#imageContainer {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 75vh;
+    background-image: url(../../Imagens/CapaPaginaLutas.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+}
+
 #imageContainer::before {
     content: '';
     position: absolute;
@@ -66,97 +80,18 @@ body::-webkit-scrollbar-track {
     z-index: -1;
 }
 
-#concent-header {
+#content-header {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: relative;
     padding-block: 50px;
+    height: 75vh;
+    color: #ddd;
 }
 
-#concent-header p {
-    color: white;
-    font-size: 18px;
-    margin-block: 20px;
+#content-header h1{
+    font-size: 40px;
 }
 
-#header-tittle {
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-top: 30px;
-}
-
-#yokamirpg {
-    margin-block: 10px;
-    max-width: 30vw;
-}
-
-.header-button {
-    margin: 15px;
-    min-width: 400px;
-    padding-block: 10px;
-    border: 2px solid white;
-    border-radius: 5px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    letter-spacing: 3px;
-}
-
-#concent-header a:hover {
-    background-color: rgba(255, 255, 255, 0.25);
-}
-
-@media (max-width: 460px) {
-    #logoenome {
-        max-width: 35vw;
-    }
-
-    #concent-header p {
-        font-size: 15px;
-        margin-block: 15px;
-    }
-
-    #header-tittle {
-        color: white;
-        font-size: 18px;
-        font-weight: bold;
-        letter-spacing: 1px;
-    }
-
-    #yokamirpg {
-        margin-block: 5px;
-        max-width: 45vh;
-    }
-
-    .header-button {
-        min-width: 250px;
-    }
-
-    .nav-list li a{
-        font-size: 14px;
-        color: black;
-    }
-
-    .seta {
-        filter: grayscale(100%) brightness(0);
-        max-height: 2vh;
-        margin: 0;
-    }
-
-    .botao:hover {
-        background-color: rgba(255, 255, 255, 0);
-        border-radius: 25px;
-    }
-    
-    .botao:hover a {
-        opacity: 0.7;
-    }
-
-    .botao:hover .seta {
-        opacity: 0.7;
-    }
-}
