@@ -9,6 +9,7 @@
 body {
     width: 101vw;
     max-width: 10vw;
+    height: auto;
     background-color: rgb(46, 46, 46);
     overflow-x: hidden;
     overflow-y: auto; 
@@ -60,7 +61,7 @@ body::-webkit-scrollbar-track {
     position: absolute;
     left: 0;
     top: 0;
-    height: 75vh;
+    height: 60vh;
     background-image: url(../../Imagens/CapaPaginaLutas.webp);
     background-repeat: no-repeat;
     background-position: center center;
@@ -74,7 +75,7 @@ body::-webkit-scrollbar-track {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 75vh;
+    height: 60vh;
     background-color: rgba(0, 0, 0, 0.5); 
     pointer-events: none;
     z-index: -1;
@@ -87,11 +88,153 @@ body::-webkit-scrollbar-track {
     flex-direction: column;
     position: relative;
     padding-block: 50px;
-    height: 75vh;
+    padding-inline: 10px;
+    height: 60vh;
     color: #ddd;
 }
 
 #content-header h1{
     font-size: 40px;
+}
+
+main {
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 100vw;
+    margin-top: 60vh;
+}
+
+.main-button {
+    margin: 10px;
+}
+
+.main-button span{
+    font-family: "Oswald", sans-serif;
+    width: calc(100vw - 100px);
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid hsla(0, 0%, 87%, 0.7);
+    cursor: pointer;
+}
+
+.main-button span h1 {
+    padding-inline: 10px;
+}
+
+.combat-content {
+    display: none;
+    padding-inline: 10px;
+    width: 90vw;
+    height: auto;
+}
+
+.combat-content.active {
+    display: block;
+}
+
+.attributes-content {
+    display: none;
+    padding-inline: 10px;
+    width: 90vw;
+    height: auto;
+}
+
+.attributes-content.active {
+    display: block;
+}
+
+.shifts-content {
+    display: none;
+    padding-inline: 10px;
+    width: 90vw;
+    height: auto;
+}
+
+.shifts-content.active {
+    display: block;
+}
+
+.combat-seta {
+    max-width: 3vh;
+    max-height: 3vh;
+    margin-inline: 10px;
+    transform: rotate(-90deg);
+    transition: 0.3s ease-in-out;
+    opacity: 0.7;
+}
+
+.combat-seta.active {
+    transform: rotate(90deg);
+    transition: 0.3s ease-in-out;
+}
+
+.shifts-seta {
+    max-width: 3vh;
+    max-height: 3vh;
+    margin-inline: 10px;
+    transform: rotate(-90deg);
+    transition: 0.3s ease-in-out;
+    opacity: 0.7;
+}
+
+.shifts-seta.active {
+    transform: rotate(90deg);
+    transition: 0.3s ease-in-out;
+}
+
+.attributes-seta {
+    max-width: 3vh;
+    max-height: 3vh;
+    margin-inline: 10px;
+    transform: rotate(-90deg);
+    transition: 0.3s ease-in-out;
+    opacity: 0.7;
+}
+
+.attributes-seta.active {
+    transform: rotate(90deg);
+    transition: 0.3s ease-in-out;
+}
+
+
+.main-button section p {
+    margin-inline: 20px;
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    margin-inline: 30px !important;
+    margin-bottom: 5px !important;
+    text-align: justify;
+}
+
+.tittle {
+    font-size: 30px;
+}
+
+@media (max-width: 460px) {
+    #imageContainer, #imageContainer::before, #content-header {
+        height: 65vh;
+    }
+
+    #content-header h1 {
+        font-size: 30px;
+    }
+
+    #content-header p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    main {
+        padding-top: 65vh;
+    }
 }
 
