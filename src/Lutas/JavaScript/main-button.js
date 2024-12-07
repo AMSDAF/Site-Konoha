@@ -36,3 +36,29 @@ document.addEventListener('DOMContentLoaded', function (){
         })
     }
 });
+
+document.addEventListener('DOMContentLoaded', function (){
+    const distanceButton = document.querySelector('#distance-button');
+    const distanceContent = document.querySelector('.distance-content');
+    const distanceSeta = document.querySelector('.distance-seta');
+
+    if (distanceButton && distanceContent) {
+        distanceButton.addEventListener('click', function () {
+            distanceContent.classList.toggle('active');
+            distanceSeta.classList.toggle('active');
+        })
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function (){
+    const elementsButton = document.querySelector('#elements-button');
+    const elementsContent = document.querySelector('.elements-content');
+    const elementsSeta = document.querySelector('.elements-seta');
+
+    if (elementsButton && elementsContent) {
+        elementsButton.addEventListener('click', function () {
+            elementsContent.classList.toggle('active');
+            elementsSeta.classList.toggle('active');
+        })
+    }
+});
