@@ -99,7 +99,7 @@ main {
 }
 
 .card-content {
-    width: 62vw;
+    width: 60vw;
     height: 300px;
     margin-top: 20px;
     display: flex;
@@ -161,13 +161,18 @@ main {
     }
 
     .card-title {
-        font-size: 16px;
+        font-size: 20px;
         text-align: center;
         margin-bottom: 10px;
+        text-wrap: nowrap;
+    }
+
+    .card-content {
+        width: 80vw;
     }
 
     .card-paragraph {
-        font-size: 8px;
+        font-size: 12px;
         text-align: justify; 
         margin-bottom: 10px;
     }
@@ -183,7 +188,11 @@ main {
     }
     
     .quem-somos p {
-        font-size: 8px;
+        font-size: 12px;
         margin-block: 5px;
+    }
+
+    footer p {
+        font-size: 8px;
     }
 }
