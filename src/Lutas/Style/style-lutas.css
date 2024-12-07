@@ -257,10 +257,6 @@ main {
 }
 
 @media (max-width: 460px) {
-    #imageContainer, #imageContainer::before, #content-header {
-        height: 65vh;
-    }
-
     #content-header h1 {
         font-size: 30px;
     }
