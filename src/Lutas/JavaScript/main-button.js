@@ -62,3 +62,16 @@ document.addEventListener('DOMContentLoaded', function (){
         })
     }
 });
+
+document.addEventListener('DOMContentLoaded', function (){
+    const damageButton = document.querySelector('#damage-button');
+    const damageContent = document.querySelector('.damage-content');
+    const damageSeta = document.querySelector('.damage-seta');
+
+    if (damageButton && damageContent) {
+        damageButton.addEventListener('click', function () {
+            damageContent.classList.toggle('active');
+            damageSeta.classList.toggle('active');
+        })
+    }
+});

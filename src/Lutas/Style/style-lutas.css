@@ -171,6 +171,17 @@ main {
     display: block;
 }
 
+.damage-content {
+    display: none;
+    padding-inline: 10px;
+    width: 90vw;
+    height: auto;
+}
+
+.damage-content.active {
+    display: block;
+}
+
 .combat-seta {
     max-width: 3vh;
     max-height: 3vh;
@@ -237,6 +248,20 @@ main {
 }
 
 .elements-seta.active {
+    transform: rotate(90deg);
+    transition: 0.3s ease-in-out;
+}
+
+.damage-seta {
+    max-width: 3vh;
+    max-height: 3vh;
+    margin-inline: 10px;
+    transform: rotate(-90deg);
+    transition: 0.3s ease-in-out;
+    opacity: 0.7;
+}
+
+.damage-seta.active {
     transform: rotate(90deg);
     transition: 0.3s ease-in-out;
 }
