@@ -49,7 +49,7 @@ body::-webkit-scrollbar-track {
     left: 0;
     top: 0;
     height: 75vh;
-    background-image: url(../../Imagens/CapaPaginaPercepção.jpeg);
+    background-image: url(../../../Imagens/CapaPaginaPercepção.jpeg);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;

@@ -12,12 +12,13 @@ body {
     height: auto;
     background-color: rgb(46, 46, 46);
     overflow-x: hidden;
-    overflow-y: auto; 
+    overflow-y: auto;
     margin: 0;
     font-size: 16px;
 }
 
-html, body {
+html,
+body {
     zoom: 100%;
     scroll-behavior: smooth;
     scrollbar-width: thin;
@@ -26,16 +27,16 @@ html, body {
 
 body::-webkit-scrollbar {
     width: 8px;
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 body::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 4px; 
+    border-radius: 4px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, 0.6); 
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 body::-webkit-scrollbar-track {
@@ -49,7 +50,7 @@ body::-webkit-scrollbar-track {
     left: 0;
     top: 0;
     height: 75vh;
-    background-image: url(../../Imagens/CapaPaginaVelocidade.jpg);
+    background-image: url(../../../Imagens/CapaPaginaVelocidade.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -63,7 +64,7 @@ body::-webkit-scrollbar-track {
     left: 0;
     width: 100vw;
     height: 75vh;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     pointer-events: none;
     z-index: -1;
 }
@@ -80,7 +81,7 @@ body::-webkit-scrollbar-track {
     color: #ddd;
 }
 
-#content-header h1{
+#content-header h1 {
     font-size: 40px;
 }
 
@@ -164,27 +165,25 @@ main {
 }
 
 @media (max-width: 460px) {
-    @media (max-width: 460px) {
-        #content-header h1 {
-            font-size: 30px;
-        }
-    
-        #content-header p {
-            font-size: 14px;
-            text-align: center;
-        }
-    
-        .content-main {
-            width: 90vw;
-        }
-    
-        .tittle h1 {
-            font-size: 25px;
-            text-align: start;
-        }
-    
-        .content-main section p {
-            font-size: 14px;
-        }
+    #content-header h1 {
+        font-size: 30px;
+    }
+
+    #content-header p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .content-main {
+        width: 90vw;
+    }
+
+    .tittle h1 {
+        font-size: 25px;
+        text-align: start;
+    }
+
+    .content-main section p {
+        font-size: 14px;
     }
 }
