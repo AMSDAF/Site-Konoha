@@ -179,26 +179,25 @@ main {
 }
 
 .card-image {
-    background-color: #ddd;
     background-size: cover;
     width: 190px;
     height: 90px;
 }
 
 #image-uchiha {
-    background-image: url(../Images/CapaPaginaClãUchiha.jpg);
+    background-image: url(../Images/CapaPaginaClaUchiha.jpg);
 }
 
 #image-uzumaki {
-    background-image: url(../Images/CapaPaginaClãUzumaki.webp);
+    background-image: url(../Images/CapaPaginaClaUzumaki.webp);
 }
 
 #image-hyuuga {
-    background-image: url(../Images/CapaPaginaClãHyuuga.webp);
+    background-image: url(../Images/CapaPaginaClaHyuuga.webp);
 }
 
 #image-lee {
-    background-image: url(../Images/CapaPaginaClãLee.jpg);
+    background-image: url(../Images/CapaPaginaClaLee.jpg);
 }
 
 .button-clans {

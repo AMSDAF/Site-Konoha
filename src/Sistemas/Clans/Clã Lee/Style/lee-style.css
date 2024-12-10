@@ -49,7 +49,7 @@ body::-webkit-scrollbar-track {
     left: 0;
     top: 0;
     height: 75vh;
-    background-image: url(../../Images/CapaPaginaClãLee.jpg);
+    background-image: url(../../Images/CapaPaginaClaLee.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -118,6 +118,12 @@ main {
     max-height: 3vh;
     margin-inline: 10px;
     transform: rotate(-90deg);
+    transition: 0.3s ease-in-out;
+}
+
+.seta-button.active {
+    transition: 0.3s ease-in-out;
+    transform: rotate(90deg);
 }
 
 .sub-tittle {
@@ -126,11 +132,24 @@ main {
 }
 
 .button-content {
+    display: none;
+    cursor: pointer;
+}
+
+.button-content.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ficha-list {
     width: 90vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .ficha {
@@ -182,8 +201,12 @@ main {
     .button-content {
         font-size: 12px;
     }
-    
+
     .ficha-image img {
         max-width: 250px;
+    }
+
+    .seta-button {
+        min-width: 5vw;
     }
 }

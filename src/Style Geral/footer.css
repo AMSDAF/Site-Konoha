@@ -43,7 +43,8 @@ footer {
 
 @media (max-width: 460px) {
     #name-logo {
-        max-width: 30vw;
+        max-width: 20vw;
+        min-height: 3vh;
         margin-inline: 10px;
     }
 
